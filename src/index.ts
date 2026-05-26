@@ -24,7 +24,6 @@ const server = new McpServer({
   version: "0.3.0",
 });
 
-// 统一处理工具执行与返回格式，直接返回 API 原始 JSON 结果
 const executeTool = async (handler: () => Promise<any>) => {
   const result = await handler();
   return { content: [{ type: 'text' as const, text: JSON.stringify(result, null, 2) }] };
