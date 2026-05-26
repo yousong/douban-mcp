@@ -59,6 +59,30 @@
 
 - [豆瓣 API 文档](https://goddlts.github.io/douban-api-docs/)
 
+## 安装
+
+```bash
+pnpm add -g github:yousong/douban-mcp
+```
+
+## 启动
+
+```bash
+douban-mcp
+```
+
+作为 MCP stdio 服务器使用：
+
+```json
+{
+  "mcpServers": {
+    "douban": {
+      "command": "douban-mcp"
+    }
+  }
+}
+```
+
 ## 许可证
 
 本项目采用 MIT 许可证。

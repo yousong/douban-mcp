@@ -20,7 +20,7 @@ import {
 import open from 'open';
 
 const server = new McpServer({
-  name: "L-Chris/douban-mcp",
+  name: "yousong/douban-mcp",
   version: "0.3.0",
 });
 
