@@ -1,13 +1,16 @@
 {
-  "name": "douban-mcp",
+  "name": "@yousong/douban-mcp",
   "version": "0.3.0",
   "description": "",
   "type": "module",
   "main": "index.js",
   "license": "MIT",
-  "author": "L-Chris",
+  "author": "yousong",
   "bin": {
     "douban-mcp": "./dist/index.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "prepare": "tsc && chmod +x dist/*.js",

@@ -61,8 +61,21 @@
 
 ## 安装
 
+### 1. 配置 GitHub Packages 认证
+
+创建或编辑 `~/.npmrc`，添加以下内容：
+
+```
+@yousong:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+```
+
+将 `YOUR_GITHUB_TOKEN` 替换为你的 GitHub Personal Access Token（需包含 `read:packages` 权限）。
+
+### 2. 安装包
+
 ```bash
-pnpm add -g github:yousong/douban-mcp
+npm install -g @yousong/douban-mcp
 ```
 
 ## 启动

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { createRequire } from 'node:module';
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import {
@@ -19,9 +20,12 @@ import {
 } from "./api.js";
 import open from 'open';
 
+const require = createRequire(import.meta.url);
+const pkg = require('../package.json');
+
 const server = new McpServer({
-  name: "yousong/douban-mcp",
-  version: "0.3.0",
+  name: pkg.name,
+  version: pkg.version,
 });
 
 const executeTool = async (handler: () => Promise<any>) => {
