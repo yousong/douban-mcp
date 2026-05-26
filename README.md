@@ -2,11 +2,33 @@
 
 这个 MCP 服务器提供了与豆瓣内容交互的功能，包括图书、电影、电视剧和小组讨论等。
 
-## 功能特性
-
 - 书籍：搜索、查看图书评论
 - 电影、电视剧：搜索、查看评论
 - 小组讨论：列出话题、查看话题详情
+
+## 安装
+
+```bash
+npm install -g @yousongzh/douban-mcp --registry=https://registry.npmjs.org/
+```
+
+## 启动
+
+```bash
+douban-mcp
+```
+
+作为 MCP stdio 服务器使用：
+
+```json
+{
+  "mcpServers": {
+    "douban": {
+      "command": "douban-mcp"
+    }
+  }
+}
+```
 
 ## 工具
 
@@ -56,30 +78,6 @@
 ## 资源
 
 - [豆瓣 API 文档](https://goddlts.github.io/douban-api-docs/)
-
-## 安装
-
-```bash
-npm install -g @yousongzh/douban-mcp --registry=https://registry.npmjs.org/
-```
-
-## 启动
-
-```bash
-douban-mcp
-```
-
-作为 MCP stdio 服务器使用：
-
-```json
-{
-  "mcpServers": {
-    "douban": {
-      "command": "douban-mcp"
-    }
-  }
-}
-```
 
 ## 许可证
 
