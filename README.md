@@ -1,7 +1,5 @@
 # 豆瓣 MCP 服务器
 
-[English](README.md) | [中文](README.zh-CN.md)
-
 这个 MCP 服务器提供了与豆瓣内容交互的功能，包括图书、电影、电视剧和小组讨论等。
 
 ## 功能特性
@@ -61,21 +59,8 @@
 
 ## 安装
 
-### 1. 配置 GitHub Packages 认证
-
-创建或编辑 `~/.npmrc`，添加以下内容：
-
-```
-@yousong:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
-```
-
-将 `YOUR_GITHUB_TOKEN` 替换为你的 GitHub Personal Access Token（需包含 `read:packages` 权限）。
-
-### 2. 安装包
-
 ```bash
-npm install -g @yousong/douban-mcp
+npm install -g @yousongzh/douban-mcp --registry=https://registry.npmjs.org/
 ```
 
 ## 启动

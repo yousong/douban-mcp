@@ -1,6 +1,6 @@
 {
-  "name": "@yousong/douban-mcp",
-  "version": "0.3.0",
+  "name": "@yousongzh/douban-mcp",
+  "version": "0.4.0",
   "description": "",
   "type": "module",
   "main": "index.js",
@@ -8,9 +8,6 @@
   "author": "yousong",
   "bin": {
     "douban-mcp": "./dist/index.js"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "prepare": "tsc && chmod +x dist/*.js",
